@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./pics/open-book.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Aiman's First Library</title>
+  </head>
+  <body>
+    <article class="article">
+      <div class="fab">
+        <button class="fab-btn">+</button>
+        <div class="drop-down">
+          <a href="./home.html">Home</a>
+          <a href="./library.html">Libray</a>
+          <a href="./add-book.html">Add Your Book</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+      </div>
+      <header class="nav_bar">
+        <img src="./pics/book.png" alt="" />
+        <span>Aiman's Library</span>
+        <nav>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <div class="sliding-menu">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./library.html">Libray</a></li>
+          <li><a href="./add-book.html">Add Your Book</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="home-content">
+        <h1>Discover Your Next Favorite Read</h1>
+        <p>
+          Welcome to your personal Book Haven—where every page is an adventure
+          waiting to be uncovered. Browse our curated collection of timeless
+          classics, modern bestsellers, and hidden gems to find the perfect
+          story for your mood. Have a new title you love? Add it in a few clicks
+          and share your passion with fellow readers. Dive in, explore, and help
+          our library grow—one book at a time.
+        </p>
+        <button id="visit-library-btn">visit out library</button>
+      </div>
+      <footer>
+        <div class="footer">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./library.html">Libray</a></li>
+            <li><a href="./add-book.html">Add Your Book</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <p>© All rights reserved to Aiman. Policy</p>
+      </footer>
+    </article>
+    <script>
+      const hamMenu = document.querySelector(".ham-menu");
+      const sideMenu = document.querySelector(".sliding-menu");
+      hamMenu.addEventListener("click", () => {
+        hamMenu.classList.toggle("active");
+        sideMenu.classList.toggle("active");
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.getElementById("visit-library-btn");
+        btn.addEventListener("click", () => {
+          window.location.href = "library.html";
+        });
+      });
+    </script>
+  </body>
+</html>

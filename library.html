@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./pics/open-book.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Library</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <article class="article">
+      <div class="fab">
+        <button class="fab-btn">+</button>
+        <div class="drop-down">
+          <a href="./home.html">Home</a>
+          <a href="./library.html">Libray</a>
+          <a href="./add-book.html">Add Your Book</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+      </div>
+      <header class="nav_bar">
+        <img src="./pics/book.png" alt="" />
+        <span>Aiman's Library</span>
+        <nav>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <div class="sliding-menu">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./library.html">Libray</a></li>
+          <li><a href="./add-book.html">Add Your Book</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- <div class="library"> -->
+      <div class="home-content">
+        <div>
+          <h1>Explore Our Library</h1>
+          <p>
+            Dive into a world of stories with our ever-growing library. Browse
+            by genre, author, or popularity to find your next great read. Each
+            book listing includes key details and a short synopsis to help you
+            choose. Can’t find what you’re looking for? Add it yourself and help
+            our collection shine!
+          </p>
+        </div>
+        <div class="books">
+          <div class="book" data-id="1">
+            <div class="book-img">
+              <img src="https://picsum.photos/200/250?random=4" alt="" />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">Cant Hurt Me</h3>
+                <p class="publish-year">year: 2018</p>
+                <p class="author">David Goggins</p>
+                <p class="book-genre">Biography</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+          <div class="book" data-id="2">
+            <div class="book-img">
+              <img
+                src="https://picsum.photos/200/250?random=11"
+                alt="Atomic Habits cover"
+              />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">Atomic Habits</h3>
+                <p class="publish-year">year: 2018</p>
+                <p class="author">James Clear</p>
+                <p class="book-genre">Self-Help</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" data-id="3">
+            <div class="book-img">
+              <img
+                src="https://picsum.photos/200/250?random=12"
+                alt="Educated cover"
+              />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">Educated</h3>
+                <p class="publish-year">year: 2018</p>
+                <p class="author">Tara Westover</p>
+                <p class="book-genre">Memoir</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" data-id="4">
+            <div class="book-img">
+              <img
+                src="https://picsum.photos/200/250?random=13"
+                alt="Sapiens cover"
+              />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">Sapiens</h3>
+                <p class="publish-year">year: 2011</p>
+                <p class="author">Yuval Noah Harari</p>
+                <p class="book-genre">History</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" data-id="5">
+            <div class="book-img">
+              <img
+                src="https://picsum.photos/200/250?random=14"
+                alt="The Hobbit cover"
+              />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">The Hobbit</h3>
+                <p class="publish-year">year: 1937</p>
+                <p class="author">J.R.R. Tolkien</p>
+                <p class="book-genre">Fantasy</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" data-id="6">
+            <div class="book-img">
+              <img
+                src="https://picsum.photos/200/250?random=15"
+                alt="1984 cover"
+              />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">1984</h3>
+                <p class="publish-year">year: 1949</p>
+                <p class="author">George Orwell</p>
+                <p class="book-genre">Dystopian</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" data-id="7">
+            <div class="book-img">
+              <img
+                src="https://picsum.photos/200/250?random=16"
+                alt="To Kill a Mockingbird cover"
+              />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">To Kill a Mockingbird</h3>
+                <p class="publish-year">year: 1960</p>
+                <p class="author">Harper Lee</p>
+                <p class="book-genre">Classic</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" data-id="8">
+            <div class="book-img">
+              <img
+                src="https://picsum.photos/200/250?random=17"
+                alt="The Lean Startup cover"
+              />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">The Lean Startup</h3>
+                <p class="publish-year">year: 2011</p>
+                <p class="author">Eric Ries</p>
+                <p class="book-genre">Business</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" data-id="9">
+            <div class="book-img">
+              <img
+                src="https://picsum.photos/200/250?random=18"
+                alt="Becoming cover"
+              />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">Becoming</h3>
+                <p class="publish-year">year: 2018</p>
+                <p class="author">Michelle Obama</p>
+                <p class="book-genre">Autobiography</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" data-id="10">
+            <div class="book-img">
+              <img
+                src="https://picsum.photos/200/250?random=19"
+                alt="Thinking, Fast and Slow cover"
+              />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">Thinking, Fast and Slow</h3>
+                <p class="publish-year">year: 2011</p>
+                <p class="author">Daniel Kahneman</p>
+                <p class="book-genre">Psychology</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" data-id="11">
+            <div class="book-img">
+              <img
+                src="https://picsum.photos/200/250?random=20"
+                alt="The Alchemist cover"
+              />
+            </div>
+            <div class="under-book">
+              <div class="book-details">
+                <h3 class="book-name">The Alchemist</h3>
+                <p class="publish-year">year: 1988</p>
+                <p class="author">Paulo Coelho</p>
+                <p class="book-genre">Fiction</p>
+              </div>
+              <div class="book-delete">
+                <button class="del-btn">X delete Book</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./library.html">Libray</a></li>
+            <li><a href="./add-book.html">Add Your Book</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <p>© All rights reserved to Aiman. Policy</p>
+      </footer>
+    </article>
+    <!-- <script>
+      const hamMenu = document.querySelector(".ham-menu");
+      const sideMenu = document.querySelector(".sliding-menu");
+      hamMenu.addEventListener("click", () => {
+        hamMenu.classList.toggle("active");
+        sideMenu.classList.toggle("active");
+      });
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./pics/open-book.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Add Your Book</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <article class="article">
+      <div class="fab">
+        <button class="fab-btn">+</button>
+        <div class="drop-down">
+          <a href="./home.html">Home</a>
+          <a href="./library.html">Libray</a>
+          <a href="./add-book.html">Add Your Book</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+      </div>
+      <header class="nav_bar">
+        <img src="./pics/book.png" alt="" />
+        <span>Aiman's Library</span>
+        <nav>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <div class="sliding-menu">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./library.html">Libray</a></li>
+          <li><a href="./add-book.html">Add Your Book</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="home-content">
+        <h1>Add Your Book to the Library</h1>
+
+        <form class="submit-inputs">
+          <input
+            type="text"
+            name="author-name"
+            id="author-name"
+            placeholder="Author Name"
+            required
+          />
+          <input
+            type="text"
+            name="book-title"
+            id="book-title"
+            placeholder="Book Title"
+            required
+          />
+          <input
+            type="number"
+            name="publish-year"
+            id="publish-year"
+            placeholder="Publish Year"
+            required
+          />
+          <select name="genre" id="genre" aria-placeholder="Book Genre">
+            <option>Select A Genre</option>
+            <option value="humor">Humor</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="mystery">Mystery</option>
+            <option value="other">Other</option>
+          </select>
+
+          <button class="submit-btn" value="submit" type="submit">
+            Add My Book
+          </button>
+        </form>
+      </div>
+      <footer>
+        <div class="footer">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./library.html">Libray</a></li>
+            <li><a href="./add-book.html">Add Your Book</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <p>© All rights reserved to Aiman. Policy</p>
+      </footer>
+    </article>
+  </body>
+</html>
